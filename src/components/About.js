@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 const About = () => {
   return (
-    <div>
+    <Main>
       <Text>Our system</Text>
       <Content>
         {" "}
@@ -21,11 +21,13 @@ const About = () => {
           magnam.
         </p>
       </Content>
-    </div>
+    </Main>
   );
 };
 
 export default About;
+const Main = styled.main`
+margin-top: 1rem;`
 const Text = styled.div`
   text-align: center;
   text-transform: uppercase;

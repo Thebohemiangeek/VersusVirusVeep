@@ -17,5 +17,5 @@ const Back = styled.div`
   background-position: center;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  filter: brightness(50%);
-`;
+/*   filter: brightness(50%);
+ */`;

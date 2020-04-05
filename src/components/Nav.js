@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { FaUniversity, FaComment } from "react-icons/fa";
+import LogoPng from '../images/Logo.png'
 const Nav = () => {
   return (
     <NavWrapper>
-      <Logo>Veep</Logo>
+      <Logo><img src={LogoPng} /></Logo>
       <Buttons>
         <li>
           <FaUniversity /> login
@@ -35,16 +36,13 @@ const Buttons = styled.ul`
   }
 `;
 const Logo = styled.div`
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  margin-left: 40px;
+ img{ height:80px;}
 `;
 const NavWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   z-index: 10;
   width: 100%;
-  color: white;
+  color: #000F55;
 `;
